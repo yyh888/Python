@@ -1,10 +1,14 @@
-class TreeNode:
-    a = 120
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-x = TreeNode
-x.val = 100
-print(x.a)
+class Solution(object):
+    ret = 0
+    def bstToGst(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        if root == None:
+            return None
+        self.bstToGst(root.right)
+        self.ret += root.val
+        root.val = self.ret
+        self.bstToGst(root.left)
+        return root
