@@ -3,7 +3,7 @@ class Functor:
         self.m_Val = oA
 
     def __call__(self):
-        return func(self.m_Val.self.m_Val)
+        return func(self.m_Val.m_Val)
 
 def func(num):
     return 2 * num
