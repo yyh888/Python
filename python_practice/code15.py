@@ -1,2 +1,3 @@
-mul = lambda x, y : x * y
-print(mul(2, 8))
+# mul = lambda x, y : x * y
+# print(mul(2, 8))
+
